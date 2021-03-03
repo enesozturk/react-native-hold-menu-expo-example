@@ -2,51 +2,59 @@ import React from "react";
 import { View } from "react-native";
 
 import { HoldItem, HoldMenuProvider } from "react-native-hold-menu";
-import { Feather } from "@expo/vector-icons";
+import { Feather as Icon } from "@expo/vector-icons";
 
 import styles from "./styles";
 
 const items = [
   {
-    text: "Actions",
     isTitle: true,
+    text: "Actions",
     onPress: () => {},
   },
   {
-    text: "Action 1",
-    icon: () => <Feather name="home" size={18} />,
+    text: "Home",
+    icon: () => <Icon name="home" size={18} />,
     onPress: () => {
-      console.log("[onPress]: Action 1");
+      console.log("[ACTION]: Home");
     },
   },
   {
-    text: "Action 2",
+    text: "Edit",
+    icon: () => <Icon name="edit" size={18} />,
     onPress: () => {
-      console.log("[onPress]: Action 2");
+      console.log("[ACTION]: Edit");
     },
-    icon: () => <Feather name="edit" size={18} />,
   },
   {
-    text: "Action 3",
+    text: "Download",
     onPress: () => {
-      console.log("[onPress]: Action 3");
+      console.log("[ACTION]: Download");
     },
-    icon: () => <Feather name="download" size={18} />,
+    icon: () => <Icon name="download" size={18} />,
   },
   {
-    text: "Action 4",
+    text: "Delete",
     onPress: () => {
-      console.log("[onPress]: Action 4");
+      console.log("[ACTION]: Delete");
     },
-    icon: () => <Feather name="share" size={18} />,
+    icon: () => <Icon name="trash" size={18} color={"red"} />,
     withSeperator: true,
+    isDestructive: true,
   },
   {
-    text: "Action 5",
+    text: "Share",
     onPress: () => {
-      console.log("[onPress]: Action 5");
+      console.log("[ACTION]: Share");
     },
-    icon: () => <Feather name="more-horizontal" size={18} />,
+    icon: () => <Icon name="share" size={18} />,
+  },
+  {
+    text: "More",
+    onPress: () => {
+      console.log("[ACTION]: More");
+    },
+    icon: () => <Icon name="more-horizontal" size={18} />,
   },
 ];
 
