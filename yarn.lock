@@ -1220,11 +1220,12 @@
     pouchdb-collections "^1.0.1"
     tiny-queue "^0.2.1"
 
-"@gorhom/portal@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@gorhom/portal/-/portal-0.2.0.tgz#65423726b1352e2b9e3c3b8da83a58e4dff48ce6"
-  integrity sha512-PoYYSliPCl624ORih+zyI1pVbH2Y2Mj+EY6nXeAIi2r1LGv10hItZLzdgnbPPfQ0neikTDYArlOzuB5zKIex5w==
+"@gorhom/portal@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@gorhom/portal/-/portal-1.0.3.tgz#7a16341ac7f1860ad9c82dc78cab6f776496ba6e"
+  integrity sha512-4kq3eD8g6FEmTmUsqfBHdEpanVC7EMtBqcThD6kbB0GJqCVhhnl/f4lGNSs0D5ilUkOYtMDNmh7LjDcEbHthHA==
   dependencies:
+    immer "^8.0.1"
     lodash.isequal "^4.5.0"
     nanoid "^3.1.20"
 
@@ -3649,6 +3650,11 @@ immediate@^3.2.2:
   resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.3.0.tgz"
   integrity sha512-HR7EVodfFUdQCTIeySw+WDRFJlPcLOJbXfwwZ7Oom6tjsvZ3bOkCDJHehQC3nxJrv7+f9XecwazynjU8e4Vw3Q==
 
+immer@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
+  integrity sha512-aqXhGP7//Gui2+UrEtvxZxSquQVXTpZ7KDxfCcKAF3Vysvw0CViVaW9RZ1j1xlIYqaaaipBoqdqeibkc18PNvA==
+
 import-fresh@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-2.0.0.tgz"
@@ -5312,12 +5318,12 @@ react-native-gesture-handler@~1.8.0:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
-react-native-hold-menu@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/react-native-hold-menu/-/react-native-hold-menu-0.0.3.tgz#522891c81a6468e9fe395dfea961ccef61a01500"
-  integrity sha512-io1c2Tcq1Xlxge0Kfsopr5kdrA8aypBIF85fMsda/HvD14Axw5+2i7sAWyWaotc+k1on2xM215km1W7diSBHOg==
+react-native-hold-menu@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-hold-menu/-/react-native-hold-menu-0.0.6.tgz#a2581597a29236a701bf0270c5cb0b05678c5285"
+  integrity sha512-834hseOIbgSiecBfq3whF7V2Kva4k5b+BhFqukun1Di9L5fMba3kYK+0lCbqLQdIdwuBs1GAxEaxVB895rf7KA==
   dependencies:
-    "@gorhom/portal" "^0.2.0"
+    "@gorhom/portal" "^1.0.3"
     expo-blur "^9.0.0"
     lodash.isequal "^4.5.0"
     nanoid "^3.1.20"

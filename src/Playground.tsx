@@ -1,45 +1,59 @@
 import React from "react";
 import { View } from "react-native";
 
-// @ts-ignore
 import { HoldItem, HoldMenuProvider } from "react-native-hold-menu";
+import { Feather } from "@expo/vector-icons";
 
 import styles from "./styles";
 
 const items = [
   {
-    title: "Action 1",
+    text: "Actions",
+    isTitle: true,
+    onPress: () => {},
+  },
+  {
+    text: "Action 1",
+    icon: () => <Feather name="home" size={18} />,
     onPress: () => {
       console.log("[onPress]: Action 1");
     },
   },
   {
-    title: "Action 2",
+    text: "Action 2",
     onPress: () => {
       console.log("[onPress]: Action 2");
     },
+    icon: () => <Feather name="edit" size={18} />,
   },
   {
-    title: "Action 3",
+    text: "Action 3",
     onPress: () => {
       console.log("[onPress]: Action 3");
     },
+    icon: () => <Feather name="download" size={18} />,
   },
   {
-    title: "Action 4",
+    text: "Action 4",
     onPress: () => {
       console.log("[onPress]: Action 4");
     },
+    icon: () => <Feather name="share" size={18} />,
+    withSeperator: true,
   },
   {
-    title: "Action 5",
+    text: "Action 5",
     onPress: () => {
       console.log("[onPress]: Action 5");
     },
+    icon: () => <Feather name="more-horizontal" size={18} />,
   },
 ];
 
 export default function Playground() {
+  const [isEnabled, setIsEnabled] = React.useState(false);
+  const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
+
   return (
     <HoldMenuProvider theme="light">
       <View style={styles.container}>
