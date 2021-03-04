@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "hold-menu-expo-example",
-    "slug": "hold-menu-expo-example",
+    "name": "react-native-hold-menu",
+    "slug": "react-native-hold-menu",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
