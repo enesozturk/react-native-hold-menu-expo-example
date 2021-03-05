@@ -22,7 +22,7 @@ const Playground = ({}: PlaygroundProps) => {
         onPress: () => {},
       },
       {
-        text: 'Home',
+        text: 'Reply',
         icon: () => (
           <Icon
             name="home"
@@ -48,24 +48,17 @@ const Playground = ({}: PlaygroundProps) => {
         },
       },
       {
-        text: 'Download',
-        onPress: () => {
-          console.log('[ACTION]: Download');
-        },
-        icon: () => (
-          <Icon
-            name="download"
-            size={18}
-            color={theme === 'light' ? 'black' : 'white'}
-          />
-        ),
-      },
-      {
         text: 'Delete',
         onPress: () => {
           console.log('[ACTION]: Delete');
         },
-        icon: () => <Icon name="trash" size={18} color={'red'} />,
+        icon: () => (
+          <Icon
+            name="trash"
+            size={18}
+            color={theme == 'dark' ? 'rgb(255, 59,48)' : 'rgb(255, 69,58)'}
+          />
+        ),
         withSeperator: true,
         isDestructive: true,
       },
@@ -85,7 +78,7 @@ const Playground = ({}: PlaygroundProps) => {
       {
         text: 'More',
         onPress: () => {
-          console.log('[ACTION]: More');
+          console.log('[ACTION]: Share');
         },
         icon: () => (
           <Icon

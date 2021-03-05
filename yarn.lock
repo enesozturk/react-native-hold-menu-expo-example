@@ -5417,10 +5417,10 @@ react-native-gesture-handler@~1.8.0:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
-react-native-hold-menu@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/react-native-hold-menu/-/react-native-hold-menu-0.0.7.tgz#f72beb42266f755c932280d4e8bbf255fdc88b0b"
-  integrity sha512-uxgfwt6/dq1aXCcXJaG4+6QWMahrwZXXAkrmXWw6qglpn+Eq1uhxE3TzJNhZYzR4DfMZFEZ+8vK6Bcrb4RSdyg==
+react-native-hold-menu@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/react-native-hold-menu/-/react-native-hold-menu-0.0.8.tgz#17a94de73de6dfcb0031c8922dbe22e9e4d201bd"
+  integrity sha512-b7C2Ly42KVh3KrBXAntQTNyiF94F79Iydlx65+orBbdQ7BUHudnBrt5U6/wfzTaQ4kp7wQUMDYRDa3z7XEhnCQ==
   dependencies:
     "@gorhom/portal" "^1.0.3"
     expo-blur "^9.0.0"
